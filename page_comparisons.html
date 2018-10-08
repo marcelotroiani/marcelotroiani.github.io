@@ -34,7 +34,7 @@
                 <li><a href="page_lat_wind.html">Latitude vs Wind Speed</a></li>
               </ul>
             </li>
-            <li><a href="page_comparisons.html">Comparison</a></li>
+            <li class="active"><a href="page_comparisons.html">Comparison</a></li>
             <li><a href="page_data.html">Data</a></li>
           </ul>
         </div>
@@ -45,26 +45,36 @@
   <div class="container">
 
     <div class="row">
-      <div class="visual col-md-8 col-sm-12">
-        <h2 class="text-center">Summary: Latitude vs X</h2>
+      <div class="visual col-md-12">
+        <h2 class="text-center">Comparison: Latitude vs X</h2>
         <hr>
-        <img src="Images/Fig1.png" width=200px class="pull-left img-fluid">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-        <p>After assembling th dataset, we used Matplotlib to plot various aspects of the weather versus latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-      </div>
-      <div class="col-md-4">
-        <h2 class="text-center">Visualizations</h2>
-        <hr>
-        <a href="page_lat_temp.html"><img src="Images/Fig1.png" width=140px class="img-fluid"></a>
-        <a href="page_lat_humi.html"><img src="Images/Fig2.png" width=140px class="img-fluid"></a>
-        <a href="page_lat_clou.html"><img src="Images/Fig3.png" width=140px class="img-fluid"></a>
-        <a href="page_lat_wind.html"><img src="Images/Fig4.png" width=140px class="img-fluid"></a>
+        <p class="text-center">Click any plot to get an in-depth analysis.</p>
       </div>
     </div>
-      
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="text-center">vs Max Temperature</h3>
+        <a href="page_lat_temp.html"><img src="Images/Fig1.png" width=400px class="img-fluid center-block"></a>
+      </div>
+      <div class="col-md-6">
+        <h3 class="text-center">vs Humidity</h3>
+        <a href="page_lat_humi.html"><img src="Images/Fig2.png" width=400px class="img-fluid center-block"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="text-center">vs Cloudiness</h3>
+        <a href="page_lat_clou.html"><img src="Images/Fig3.png" width=400px class="img-fluid center-block"></a>
+      </div>
+      <div class="col-md-6">
+        <h3 class="text-center">vs Wind Speed</h3>
+        <a href="page_lat_wind.html"><img src="Images/Fig4.png" width=400px class="img-fluid center-block"></a>
+      </div>
+    </div>
+        
     <br>
     <hr>
-
+  
     <footer>
       <p>&copy; 2018 Data Science Bootcamp at Northwestern University</p>
     </footer>
@@ -72,6 +82,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
+  
 </body>
 </html>
